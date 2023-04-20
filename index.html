@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vinilo Vice</title>
+</head>
+<body>
+    <div class="nav-mobile">
+            <h2 class="logo">Vinilo Vice</h2>
+            <button class="open-nav" id="open-nav"><i class="bi bi-list"></i></button>
+    </div>
+    <nav>
+        <button class="close-nav" id="close-nav"><i class="bi bi-x"></i></button>
+        <h1 class="logo">Vinilo Vice</h1>
+        <div class="nav-menu">
+            <ul class="nav-menu">
+                <li><a href="./index.html" class="boton-nav boton-categoria">Home</a></li>
+                <li><a href="" class="boton-nav boton-categoria">Contactanos</a></li>
+                <li><a href="./micuenta.html" class="boton-nav boton-categoria">Mi cuenta</a></li>
+            </ul>
+        </div>
+        <div class="nav-menu-derecha">
+            <div class="nav-menu-iconos">
+                <a href="https://www.instagram.com/" class="boton-nav boton-categoria"><i class="bi bi-instagram"></a></i>
+                <a href="https://www.linkedin.com/in/jpcskv" class="boton-nav boton-categoria"><i class="bi bi-linkedin"></a></i>
+                <a href="https://github.com/jpcskv" class="boton-nav boton-categoria"><i class="bi bi-github"></a></i>
+            </div>
+        </div>
+        
+    </nav>
+    <div class="logo-principal">
+    <img src="img/logo.png" alt="logo">
+    </div>
+    <div class="wrapper">
+        <header class="header-mobile">
+            <button class="open-menu" id="open-menu"><i class="bi bi-list"></i></button>
+            <a class="boton-menu boton-carrito" href="./carrito.html">
+                <i class="bi bi-cart-fill"></i> Carrito</span>
+            </a>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu"><i class="bi bi-x"></i></button>
+            <header>
+                <h2 class="logo"></h2>
+            </header>
+            <div class="nav">
+                <ul class="menu">
+                    <li><button id="todos" class="boton-menu boton-categoria active">Todos los discos</button></li>
+                    <li><button id="rock" class="boton-menu boton-categoria"><i class="bi bi-vinyl-fill"></i>ROCK</button></li>
+                    <li><button id="rap" class="boton-menu boton-categoria"><i class="bi bi-vinyl-fill"></i>RAP</button></li>
+                    <li><button id="pop" class="boton-menu boton-categoria"><i class="bi bi-vinyl-fill"></i>POP</button></li>
+                    <li><button id="urbana" class="boton-menu boton-categoria"><i class="bi bi-vinyl-fill"></i>URBANA</button></li>
+                    <li><a class="boton-menu boton-carrito" href="./carrito.html">
+                        <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="texto-footer">2023 @JPCSKV</div>
+        </aside>
+        <main>
+            <h2 id="titulo-principal" class="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+            </div>
+
+
+        </main>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
+    
+
+</body>
+</html>
