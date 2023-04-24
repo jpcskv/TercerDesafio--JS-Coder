@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --clr-main: #212929;
-    --clr-main-light: #666666;
+    --clr-main: #3d6666;
+    --clr-main-light: #ef3bb6;
     --clr-white: #ececec;
     --clr-gray: #e2e2e2;
     --clr-red: #961818;
@@ -326,7 +326,7 @@ main {
     bottom: -1px;
     left: -8px;
     width: 0;
-    background-color: #0bf1ea;
+    background-color: #22a09b;
     transform: skew(-15deg);
     transition: all .2s ease;
 }
@@ -446,31 +446,6 @@ main {
 
 /* MI CUENTA */
 
-.buscar {
-    padding: .3rem;
-    margin-top: -0.3rem;
-}
-.boton-buscar {
-    border: 0;
-    background-color: var(--clr-main);
-    color: var(--clr-white);
-    padding: .3rem;
-    margin-top: -0.3rem;
-    margin-left: -1rem;
-    text-transform: uppercase;
-    border-radius: .4rem;
-    border: solid 2px var(--clr-main);
-    transition: background-color .2s, color .2sg;
-}
-
-.boton-buscar:hover {
-    background-color: var(--clr-white);
-    color: var(--clr-main);
-}
-
-
-
-
 .main-micuenta {
     display: flex;
     flex-direction: column;
@@ -521,7 +496,7 @@ main {
     padding: .7rem;
     margin: .7rem;
     margin-left: 0;
-    background-color: var(--clr-main-light);
+    background-color: var(--clr-main);
     color: var(--clr-white);
 }
 
@@ -541,63 +516,6 @@ main {
     display: none;
 }
 
-/* SLIDER */
-
-.slider {
-    background-color: var(--clr-main);
-}
-
-.slideshow-container{
-    max-width: 1400px;
-    position:relative;
-    margin:auto;
-    padding: 40px 0;
-    }
-
-    .mySlides{
-    display:none;
-    
-    }
-
-    .prev, .next{
-    cursor:pointer;
-    position:absolute;
-    top:50%;
-    width:auto;
-    margin-top:-22px;
-    padding:16px;
-    color:white;
-    font-weight:bold;
-    font-size:18px;
-    transition: 1s ease;
-    border-radius:0 3px 3px 0;
-    }
-
-    .next{
-    right:0;
-    border-radius:3px 0 0 3px;
-    }
-
-    .prev:hover, .next:hover{
-    background-color:rgba(0,0,0,0.8);
-    }
-
-    .fade{
-    -webkit-animation-name:fade;
-    -webkit-animation-duration:1s;
-    animation-name:fade;
-    animation-duration:1s;
-    }
-
-    @-webkit-keyframes fade{
-    from{opacity:.4}
-    to{opacity:1}
-    }
-
-    @keyframes fade{
-    from{opacity:.4}
-    to{opacity:1}
-    }
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1200px) {

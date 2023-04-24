@@ -160,8 +160,8 @@ const productos = [
         titulo: "Rauw Alejandro",
         imagen: "./img/urb-04.webp",
         categoria: {
-            nombre: "Urbano",
-            id: "urbano"
+            nombre: "Urbana",
+            id: "urbana"
         },
         precio: 12
     },   
@@ -233,21 +233,6 @@ function agregarAlCarrito(e) {
 function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;
-}
-
-// funcion para el slider
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if(slideIndex > slides.length) {
-        slideIndex = 1
-    }
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides,6000);
 }
 
 cargarProductos(productos);
